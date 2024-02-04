@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Form validation</h1>
+   enter your name fool:  <input type="text" id="name" placeholder="name">
+
+    <p id="nameerror" style="color: red; margin: 0;"></p>
+    <button onclick="btn()">clickkkk</button>
+    <script>
+        const nameerror = document.getElementById('nameerror');
+        const name =document.getElementById("name");
+        function btn(){
+            if(name.value==""){
+            nameerror.innerHTML="error please fill the form"
+        }    
+        }
+        
+    </script>
+</body>
+</html>

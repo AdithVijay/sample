@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="weight">
+    <input type="text" id="height">
+    <input type="text" id="bmi">
+    <button onclick="claculate()">calculate</button>
+
+    <script>
+
+        let weight = document.getElementById("weight")
+        let height = document.getElementById("height")
+        let bmi = document.getElementById("bmi")
+        function claculate(){
+            bmi.value= weight.value/(height.value*height.value)
+        }
+
+    </script>
+</body>
+</html>

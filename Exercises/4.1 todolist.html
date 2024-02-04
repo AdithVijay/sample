@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button onclick="btn()">click</button>
+    <div id="container"></div>
+
+    <script>
+
+        let text = document.getElementById("text")
+        let container = document.getElementById("container")        
+        function btn(){
+            let newpara=document.createElement('p')
+            container.appendChild(newpara)
+            newpara.innerHTML = "<li>" +text.value +"</li>" +"</br>" 
+            text.value=""
+        }
+
+    </script>
+</body>
+</html>

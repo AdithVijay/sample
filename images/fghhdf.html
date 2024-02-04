@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images.jpeg" alt="gfgf">
+    <button onclick="previous()">previous</button>
+    <button onclick="next()">next</button>
+    <script>
+        let arrayOfImages = [];
+        arrayOfImages.push('istockphoto-475530175-612x612.webp');
+        arrayOfImages.push('istockphoto-483346923-612x612.webp');
+        arrayOfImages.push('Unknown.jpeg');
+        let counter = 0;
+
+        function previous(){
+            if (counter >= 0) {
+                let img = document.querySelector('img'); 
+                img.src = arrayOfImages[counter]; 
+                --counter
+            }
+        }
+        function next(){
+            if (counter < arrayOfImages.length-1){
+                let img = document.querySelector('img')
+                img.src = arrayOfImages[ counter]
+                ++counter
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">10:00</p>
+    <script>
+        let demo = document.getElementById("demo")
+        let starttime = 10;
+        let totaltime = starttime*60
+        setInterval(adith,1000)
+        function adith(){
+            let minutes = Math.floor( totaltime/60)
+            let seconds = totaltime%60;
+            demo.innerHTML=`${minutes}:${seconds}`  
+            totaltime--   
+        }
+    </script>
+</body>
+</html>

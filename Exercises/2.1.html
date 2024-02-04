@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">press butoon to quote change</p>
+    <button onclick="btn()">click</button>
+
+
+<script>
+    const quotes = ["adith","vijay","jabnakii"]
+    const para = document.getElementById("para")
+    let currentindex=0;
+    function btn(){
+        let quaotechange=quotes[currentindex];
+        para.innerHTML=quaotechange
+        currentindex++;
+        if(currentindex>=quotes.length){
+        currentindex=0
+    }
+    }
+   
+</script>
+
+</body>
+</html>

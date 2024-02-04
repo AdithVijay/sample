@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="pic_bulboff.gif" id="img" alt="">
+    <button onclick="btn()" id="button">turn on</button>
+    <script>
+        let button =document.getElementById("button") 
+        let img = document.getElementById("img")
+        function btn(){
+            if(button.innerHTML=="turn on"){
+                img.src = "pic_bulbon.gif"
+            button.innerHTML = "turn off"
+            }
+           else{
+            img.src = "pic_bulboff.gif"
+            button.innerHTML = "turn on"
+           }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #b{
+            display: flex;
+          
+            margin-top: 30px;
+        }
+        .adith{
+            border: solid 1px;
+            margin-top: 30px;
+            margin-right: 30px;
+            background-color: aqua;
+            width: 70px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="car()">jhjhj</button>
+    <div id="b">
+
+    </div>
+    <script>
+        const cars = ["suzukii","farrr","dfgjlhfdsjkg"]
+        const b = document.getElementById("b")
+        function car(){
+            // for(i=0;i<cars.length;i++){
+            //  b.innerHTML+="<div class='adith'>"+cars[i]+"</div>" 
+            // }
+            // or
+            for(i of cars){
+                b.innerHTML += "<div class='adith'>"+i+"</div>"
+            }
+        }
+    </script>
+</body>
+</html>

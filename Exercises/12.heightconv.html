@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text"><br>
+    <button onclick="btn()">convert to meter</button>
+    <button onclick="btn1()">convert to feet</button><br>
+    <input type="text" id="metertext">
+    <input type="text" id="feettext">
+    <script>
+        let text = document.getElementById("text")
+        let metertext= document.getElementById("metertext")
+        let feettext=  document.getElementById("feettext")
+        function btn(){
+            metertext.value = text.value/100+"meters"
+        }
+        function btn1(){
+            feettext.value=text.value/30.48+"feet"
+        }
+    </script>
+</body>
+</html>

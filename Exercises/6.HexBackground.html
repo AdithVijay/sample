@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para{
+            border: 1px solid;
+            width: 400px;
+            height: 90px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="para"></p>
+    <button onclick="btn()"> click</button>
+    <script>
+        const quote = ["red","blue","green"]
+        let para=document.getElementById("para")
+        function btn(){
+            for(i=0;i<quote.length;i++){
+                para.style.backgroundColor=quote[Math.floor(Math.random()*quote.length)] 
+                
+            }
+        }
+    </script>
+</body>
+</html>

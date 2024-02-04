@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <button onclick="btn()">click</button>
+
+    <script>
+
+        let para=document.getElementById("para")
+        let array =["adith","vijay"]
+        let arrayindex =0
+        function btn(){
+
+            if(arrayindex<array.length){
+                para.innerHTML=array[arrayindex]
+                arrayindex++
+            }
+
+        }
+    </script>
+</body>
+</html>

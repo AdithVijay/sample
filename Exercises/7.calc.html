@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #input{
+            width: 240px;
+            height: 50px;
+            margin-bottom: 20px;
+            margin-left: 6px;
+            margin-top: 15px;
+            font-size: 50px;
+        }
+        #be{
+            margin-top: 300px;
+           margin-left: 500px;
+           border: solid 1px;
+           width: 260px;
+          background-color: antiquewhite;
+        }
+        button{
+            display: inline-flex;
+            justify-content: center;
+           align-items: center;
+            flex-direction: column;
+            width: 70px;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 9px;
+            margin-bottom: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div id="be">
+        <input type="text" id="input"><br>
+        <button onclick="b('1')" >1</button>
+        <button onclick="b('2')" >2</button>
+        <button onclick="b('3')">3</button><br>
+        <button onclick="b('4')">4</button>
+        <button onclick="b('5')">5</button>
+        <button onclick="b('6')">6</button><br>
+        <button onclick="b('2')">2</button>
+        <button onclick="b('7')">7</button>
+        <button onclick="b('8')">8</button><br>
+        <button onclick="b('9')">9</button>
+        <button onclick="b('+')">+</button>
+        <button onclick="claculate()">=</button> 
+    </div>
+    
+    
+    <script>
+        let input=document.getElementById("input")
+        function b(c){
+           input.value += c
+        }
+       function claculate(){
+            input.value=eval(input.value)
+       }
+    </script>
+
+</body>
+</html>

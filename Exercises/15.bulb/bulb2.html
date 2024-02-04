@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="pic_bulboff.gif" id="img" alt="">
+    <button id="button">turn on</button>
+    <script>
+        let img = document.getElementById("img")
+        let button = document.getElementById("button")
+        button.addEventListener("click",press)
+        function press(){
+            if(button.textContent.includes('on')){
+                button.textContent='turn off'
+                img.src = "pic_bulbon.gif"
+            }else{
+                button.textContent='turn on'
+                img.src = "pic_bulboff.gif"
+            }
+        }
+
+    </script>
+</body>
+</html>

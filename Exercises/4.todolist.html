@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .stt{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="stt">
+        <div>
+            <input type="text" id="name">
+            <button id="btn" >+</button>
+        </div>
+    </div>
+    <div id="container">
+    </div>
+    <script>
+        const btn = document.getElementById("btn")
+        const list = document.getElementById("list")
+        const name = document.getElementById("name")
+        const container= document.getElementById("container")
+        btn.addEventListener("click",function(){
+           const para = document.createElement('p')
+           para.innerText=name.value;
+           container.appendChild(para)
+           name.value=""
+        })
+        div
+    </script>
+</body>
+</html>

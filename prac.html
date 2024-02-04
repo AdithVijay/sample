@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div ><img src="images.jpeg" id="container" alt=""></div>
+    <button onclick="btn()">click</button>
+    <script>
+
+       let arry=["istockphoto-475530175-612x612.webp",
+        "istockphoto-483346923-612x612.webp",
+        "Unknown.jpeg"
+    ] 
+    let container=document.getElementById("container")
+    let index=0
+    function btn(){
+       container.src = arry[Math.floor(Math.random()*arry.length)]
+    }
+
+    </script>
+</body>
+</html>

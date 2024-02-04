@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="integer">0</p>
+    <button onclick="bplus()">+</button>
+     <button onclick="bminus()">-</button> 
+    <script>
+      integer = document.getElementById("integer");
+      let add=0
+     function bplus(){
+        add+=1
+        integer.innerHTML =add
+       
+     }
+     function bminus(){
+        add -=1
+        integer.innerHTML = add
+        
+     }
+    </script>
+
+</body>
+</html>

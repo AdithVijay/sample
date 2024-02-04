@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+         #timer{
+            background-color: rgb(213, 201, 201) ;
+            color: rgb(17, 16, 16);
+            width: 90px;
+            font-size: 40px;
+        }
+    </style>
+   
+</head>
+<body>
+   <p id="timer">10:00</p>
+   <script>
+    const startingtime = 10;
+    let time = startingtime*60;
+    const timer = document.getElementById('timer');
+    setInterval(adith,1000)
+    function adith(){
+        min = Math.floor(time/60);
+        sec = time%60;
+        timer.innerHTML=`${min}:${sec}`;
+        time--;
+    }
+   </script>
+</body>
+</html>

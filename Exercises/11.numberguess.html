@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <p id="para"></p>
+    <button onclick="btn()">click</button>
+    
+    <script>
+        let text = document.getElementById("text")
+        let para = document.getElementById("para")
+        function btn(){
+            let enterednumber = text.value;
+             if(enterednumber < 94 ){
+                para.innerHTML=enterednumber+":"+"entered no is low"
+             }
+             else if(enterednumber == 94){
+                para.innerHTML=enterednumber+":"+"you gussed it right"
+             }else if( enterednumber > 94){
+                para.innerHTML=enterednumber+":"+"enterd no is high"
+             }
+        }
+    </script>
+</body>
+</html>

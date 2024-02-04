@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <p id="change">press the button to chnage the quote</p>
+    <script>
+        const btn = document.getElementById("btn");
+        const change =document.getElementById("change");
+        const quotes =["hiiiiiiiiiiiiii",
+                        "biiiiiiiiiiii",
+                        "suuiiiiiiiiiii"
+                    ]
+        btn.addEventListener("click",function(){
+            const changeQuote =quotes[Math.floor(Math.random() * quotes.length)];
+            change.innerHTML = changeQuote;
+        })
+    </script>
+</body>
+</html>
